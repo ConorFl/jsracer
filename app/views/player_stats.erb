@@ -1,0 +1,6 @@
+<div class="container">
+  <h1><%=@name%>'s Stats</h1>
+  <%@games.each do |game| %>
+    <%=game.outcome%>
+  <%end%>
+</div>
