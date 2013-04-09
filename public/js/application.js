@@ -16,7 +16,14 @@ game.advancePlayer = function(player_number){
     next.text('WINNER! WINNER! Chicken dinner!');
     var winner = tds.filter('.name').text();
     alert("Winner: "+winner);
-    
+    $.ajax({
+      url: '/outcome',
+      type: 'POST',
+      data: {winner: winner},
+      success: function(data) {
+        $('body').html(data);
+      }
+    });
   }else{
     next.addClass("active");
   }

@@ -17,5 +17,8 @@ get '/player/:name' do
 end
 
 post '/outcome' do
-  erb :index;
+  @winner = params[:winner]
+  @game = Game.last();
+  @game.outcome = @winner;
+  erb :game_stats;
 end
