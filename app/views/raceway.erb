@@ -1,47 +1,6 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Demo</title>
+<div class="racetrack"></div>
 
-</head>
-<body>
-<table class="racer_table">
-  <tr id="player1_strip">
-    <td class="name"><%=@player1.name%></td>
-    <td class="active">--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td></td>
-  </tr>
-  <tr id="player2_strip">
-    <td class="name"><%=@player2.name%></td>
-    <td class="active">--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td>--</td>
-    <td></td>
-  </tr>
+<script type="text/javascript">
+  Game.initialize(<%= game_data.to_json.inspect %>);
+</script>
 
-</table>
-</body>
-</html>

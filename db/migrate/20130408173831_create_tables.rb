@@ -5,6 +5,7 @@ class CreateTables < ActiveRecord::Migration
     end
     create_table :games do |game|
       game.string :outcome
+      game.timestamps
     end
     create_table :games_players, :id => false do |t|
       t.references :game
@@ -12,3 +13,4 @@ class CreateTables < ActiveRecord::Migration
     end
   end
 end
+

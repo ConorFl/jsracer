@@ -2,7 +2,8 @@
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  border: 1px solid black;
+  border-radius: 4px;
 }
 th {
   text-align: left;
@@ -10,7 +11,7 @@ th {
 a.test {
   font-weight: bold;
 }
-.racer_table td {
+.table td {
   background-color: white;
   height: 20px;
   width: 20px;
@@ -18,10 +19,20 @@ a.test {
   text-align: center;
 }
 
-.racer_table td.active {
+.table td.active1,.table td.active2 {
   background-color: black;
 }
 
 tr.winner td {
   background-color: green;
+}
+
+
+table td{
+  border: 1px solid black;
+  padding: 1em;
+}
+
+table td.active{
+  background-color: lime;
 }

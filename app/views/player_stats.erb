@@ -1,6 +1,7 @@
 <div class="container">
   <h1><%=@name%>'s Stats</h1>
   <%@games.each do |game| %>
-    <p>hi</h1><%=game.outcome%>
+  <p><%="Game #"+game.id.to_s+((game.outcome == @name) ? " Winner" : " Loser")%>
+  <%="Time: "+(game.updated_at - game.created_at).to_s %>
   <%end%>
 </div>

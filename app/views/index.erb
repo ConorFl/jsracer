@@ -2,9 +2,10 @@
   <%= @winner if @winner %>
   <h1>Welcome to Sinatra Racer!</h1>
   <p>Enter Your Names Below:</p>
-  <form method="post" action="/start">
+  <form id="form1" method="post" action="/raceway">
     <input type="text" name="player1" placeholder="Player 1 Name">
     <input type="text" name="player2" placeholder="Player 2 Name">
     <input type="submit" value="Start">
   </form>
 </div>
+
